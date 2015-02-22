@@ -2,6 +2,8 @@
 
 return [
 
+  'name' => env('APP_NAME','Laravel Slack Invitation'),
+
 	/*
 	|--------------------------------------------------------------------------
 	| Application Debug Mode

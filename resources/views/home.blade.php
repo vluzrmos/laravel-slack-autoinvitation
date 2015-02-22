@@ -3,9 +3,9 @@
 @section('content')
     <div class="jumbotron">
         <div class="container">
-            <h1>LaraChat Brasil</h1>
+            <h1>{{config('app.name')}}</h1>
 
-            <p>Entre na comunidade do Laravel Brasil no Slack.</p>
+            <p>Entre na comunidade {{config('services.slack.teamname')}} no Slack.</p>
 
             <p>
                 @unless(Session::has('invitationMessage'))

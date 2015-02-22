@@ -21,8 +21,10 @@ class HomeController extends Controller {
   public function invite(SlackInvitationRequest $request){
 
     $this->dispatch(new SlackInvitation($request->input('email')));
+    $team =  config('services.slack.team');
+    $title = config('services.slack.teamname');
 
-    $invitationMessage = "Você receberá um e-mail de convite para a <a href=\"https://larachatbr.slack.com.br\"\>LaraChat Brasil</a>.";
+    $invitationMessage = "Você receberá um e-mail de convite para a <a href=\"https://{$team}.slack.com.br\"\>{$title}</a>.";
 
     return redirect("/")->with(compact("invitationMessage"));
   }

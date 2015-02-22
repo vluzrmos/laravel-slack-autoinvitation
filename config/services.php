@@ -36,6 +36,7 @@ return [
 
   'slack' => [
     'team'  => env('SLACK_TEAM'),
+    'teamname' => env('SLACK_TEAMNAME'),
     'token' => env('SLACK_TOKEN'),
     'channels' => env('SLACK_CHANNELS')
   ]
