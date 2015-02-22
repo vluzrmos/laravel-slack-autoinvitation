@@ -2,8 +2,16 @@
 	"name": "vluzrmos/slack-autoinvitation",
 	"description": "Laravel 5 - Automate slack.com invitations.",
 	"keywords": ["framework", "laravel"],
-	"license": "MIT",
+	"license": "DBAD",
 	"type": "project",
+	"authors": [
+        {
+            "name": "Vagner do Carmo",
+            "email": "vluzrmos@gmail.com",
+            "homepage": "http://blog.vluzrmos.com.br",
+            "role": "Developer"
+        }
+    ],
 	"require": {
 		"laravel/framework": "5.0.*",
         "guzzlehttp/guzzle": "~4.0|~5.0"
