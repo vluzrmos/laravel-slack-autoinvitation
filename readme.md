@@ -19,8 +19,8 @@ SLACK_TEAM=my-slack-domain
 #Get a token on https://api.slack.com/web#authentication
 SLACK_TOKEN=Your Slack Token
 
-#Channels ID (let empty if you dont know)
-SLACK_CHANNELS=Your defaults channels to users being joined comma-separeted(without spaces)
+#Channels to users be joined, eg.: general, UE45487X45, or all; general is default.
+SLACK_CHANNELS=all
 ```
 ### License
 
