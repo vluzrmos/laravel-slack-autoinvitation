@@ -34,7 +34,7 @@ class SlackInvitation extends Command implements ShouldBeQueued, SelfHandling{
       'body' => [
           'token' => $this->getToken(),
           'email' => $this->getEmail(),
-          'first_name' => $this->getusername(),
+          'first_name' => $this->getUsername(),
           'set_active' => true,
           'channels' => $this->getConfigChannelsString(),
           '_attempts' => 1
