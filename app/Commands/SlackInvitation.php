@@ -14,7 +14,7 @@ class SlackInvitation extends Command implements ShouldBeQueued, SelfHandling{
   protected $email = null;
   protected $username = null;
   protected $token = null;
-
+  protected $cacheTime = 5; //in minutes
   protected $configSpace = 'services.slack';
 
   public function __construct($email, $username = 'User'){
@@ -116,7 +116,7 @@ class SlackInvitation extends Command implements ShouldBeQueued, SelfHandling{
 
     $channels = $jsonObject->channels;
 
-    Cache::add($cacheKey, $channels, 60);
+    Cache::add($cacheKey, $channels, $this->cacheTime);
 
     return  $channels;
   }
