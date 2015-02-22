@@ -3,7 +3,7 @@ Just configure the environment in .env file:
 
 ## Instalation
 
-via composer:  <code>composer create-project vluzrmos/slack-autoinvitation project-folder ~1.0</code>
+via composer:  <code>composer create-project vluzrmos/slack-autoinvitation project-folder ~1.1</code>
 or just clone this git repository: <code>git clone https://github.com/vluzrmos/laravel-slack-autoinvitation.git</code>
 
 ```ini
@@ -19,8 +19,8 @@ SLACK_TEAM=my-slack-domain
 #Get a token on https://api.slack.com/web#authentication
 SLACK_TOKEN=Your Slack Token
 
-#Channels ID (let empty if you dont know)
-SLACK_CHANNELS=Your defaults channels to users being joined comma-separeted(without spaces)
+#Channels to users be joined, eg.: general, UE45487X45, or all; general is default.
+SLACK_CHANNELS=all
 ```
 ### License
 
