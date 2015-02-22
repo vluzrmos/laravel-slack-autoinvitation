@@ -1,5 +1,11 @@
 ## Slack Auto Invitations
 Just configure the environment in .env file:
+
+## Instalation
+
+via composer:  <code>composer create-project vluzrmos/slack-autoinvitation project-folder ~1.0</code>
+or just clone this git repository: <code>git clone https://github.com/vluzrmos/laravel-slack-autoinvitation.git</code>
+
 ```ini
 # The Name of That app
 APP_NAME=My Slack Invitator
