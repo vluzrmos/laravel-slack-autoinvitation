@@ -1,6 +1,6 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
+	"name": "vluzrmos/slack-autoinvitation",
+	"description": "Laravel 5 - Automate slack.com invitations.",
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"type": "project",
