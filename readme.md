@@ -1,11 +1,14 @@
 ## Slack Auto Invitations
 Just configure the environment in .env file:
 ```ini
+# The Name of That app
+APP_NAME=My Slack Invitator
 
-SLACK_TEAMNAME=Your Slack team title 
+# The Title of Your Slack Team
+SLACK_TEAMNAME=My Slack Team 
 
-#https://{DOMAIN}.slack.com
-SLACK_TEAM=Your team domain
+# DOMAIN of your Slack (eg.: https://{DOMAIN}.slack.com)
+SLACK_TEAM=my-slack-domain
 
 #Get a token on https://api.slack.com/web#authentication
 SLACK_TOKEN=Your Slack Token
