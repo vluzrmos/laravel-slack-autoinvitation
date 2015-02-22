@@ -24,7 +24,7 @@ class HomeController extends Controller {
     $team =  config('services.slack.team');
     $title = config('services.slack.teamname');
 
-    $invitationMessage = "Você receberá um e-mail de convite para a <a href=\"https://{$team}.slack.com.br\"\>{$title}</a>.";
+    $invitationMessage = "Você receberá um e-mail de convite para o Slack <a href=\"https://{$team}.slack.com.br\"\>{$title}</a>.";
 
     return redirect("/")->with(compact("invitationMessage"));
   }
