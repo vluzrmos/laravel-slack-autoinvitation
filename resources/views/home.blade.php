@@ -13,11 +13,11 @@
                 <input type="hidden" name='_token' value="{!! csrf_token() !!}"/>
 
                 <div class="form-group {{$errors->has('name')?'has-error':''}}">
-                    <input type="text" class="form-control" name="name" placeholder="Digite seu nome" required>
+                    <input type="text" class="form-control" name="name" placeholder="Nome e sobrenome" required>
                 </div>
 
                 <div class="input-group {{$errors->has('email')?'has-error':''}}">
-                    <input type="email" class="form-control" name="email" placeholder="Digite seu email" required>
+                    <input type="email" class="form-control" name="email" placeholder="seu.email@example.com" required>
                     <span class="input-group-btn">
                        <button type="submit" class="btn btn-primary">Solicitar convite</button>
                      </span>

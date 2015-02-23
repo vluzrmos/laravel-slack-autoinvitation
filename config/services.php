@@ -37,6 +37,7 @@ return [
   'slack' => [
     'team'  => env('SLACK_TEAM'),
     'teamname' => env('SLACK_TEAMNAME'),
+    'ssl_verify' => storage_path('/app/curl-ca-bundle.crt'),
     'token' => env('SLACK_TOKEN'),
     'channels' => env('SLACK_CHANNELS')
   ]

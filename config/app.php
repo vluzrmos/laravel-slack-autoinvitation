@@ -137,17 +137,17 @@ return [
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
+    'Vluzrmos\SlackApi\SlackApiServiceProvider',
 
-		/*
-		 * Application Service Providers...
-		 */
+    /*
+     * Application Service Providers...
+     */
 		'App\Providers\AppServiceProvider',
 		'App\Providers\BusServiceProvider',
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
     'App\Providers\ValidatorServiceProvider',
-
 	],
 
 	/*
@@ -195,7 +195,7 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
-
+    'SlackApi'  => 'Vluzrmos\SlackApi\SlackApiFacade',
 	],
 
 ];

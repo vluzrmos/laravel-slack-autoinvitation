@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "10c1d2ecb5cf7b3d269904cb56070d5a",
+    "hash": "4969e84a6726e1eecd25d817d1c908c2",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1927,6 +1927,49 @@
                 "environment"
             ],
             "time": "2014-12-05 15:19:21"
+        },
+        {
+            "name": "vluzrmos/slack-api",
+            "version": "v0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vluzrmos/laravel-slack-api.git",
+                "reference": "29943adbea11187f15b446385cb52a20c510abc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vluzrmos/laravel-slack-api/zipball/29943adbea11187f15b446385cb52a20c510abc6",
+                "reference": "29943adbea11187f15b446385cb52a20c510abc6",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~4.0|~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Vluzrmos\\": "src/Vluzrmos/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "DBAD"
+            ],
+            "authors": [
+                {
+                    "name": "Vagner do Carmo",
+                    "email": "vluzrmos@gmail.com"
+                }
+            ],
+            "description": "Class for Slack.com WEB API.",
+            "keywords": [
+                "api",
+                "laravel",
+                "slack"
+            ],
+            "time": "2015-02-23 10:18:51"
         }
     ],
     "packages-dev": [
