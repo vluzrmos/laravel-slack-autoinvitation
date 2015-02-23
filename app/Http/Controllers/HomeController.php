@@ -20,7 +20,11 @@ class HomeController extends Controller {
 
   public function invite(SlackInvitationRequest $request){
 
-    $this->dispatch(new SlackInvitation($request->input('email')));
+    $this->dispatch(new SlackInvitation(
+      $request->input('email'),
+      $request->input('name')
+    ));
+
     $team =  config('services.slack.team');
     $title = config('services.slack.teamname');
 

@@ -7,30 +7,40 @@
 
             <p>Entre na comunidade {{config('services.slack.teamname')}} no Slack.</p>
 
-            <p>
-                @unless(Session::has('invitationMessage'))
+            @unless(Session::has('invitationMessage'))
 
             <form action="{{url("/invite")}}" method="POST" class="form-inline" role="form">
                 <input type="hidden" name='_token' value="{!! csrf_token() !!}"/>
 
-                <div class="input-group {{$errors->any()?'has-error':''}}">
-                    <input type="text" class="form-control" name="email" id="" placeholder="Digite seu email">
+                <div class="form-group {{$errors->has('name')?'has-error':''}}">
+                    <input type="text" class="form-control" name="name" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="input-group {{$errors->has('email')?'has-error':''}}">
+                    <input type="email" class="form-control" name="email" placeholder="Digite seu email" required>
                     <span class="input-group-btn">
-                       <button type="submit" class="btn btn-success">Enviar convite</button>
+                       <button type="submit" class="btn btn-primary">Solicitar convite</button>
                      </span>
                 </div>
-                <!-- /input-group -->
-                @if($errors->any())
+
+                @if($errors->has('name'))
+                    <div class="help-block ">
+                        <span class="text-danger">{{$errors->first('name')}}</span>
+                    </div>
+                @endif
+
+                @if($errors->has('email'))
                     <div class="help-block ">
                         <span class="text-danger">{{$errors->first('email')}}</span>
                     </div>
                 @endif
             </form>
-            @else
-                {!! Session::get('invitationMessage') !!}
-                @endunless
 
-                </p>
+            @else
+                <p>{!! Session::get('invitationMessage') !!}</p>
+            @endunless
+
+
         </div>
     </div>
 @endsection
