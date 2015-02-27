@@ -64,19 +64,13 @@ class SlackInvitation extends Command implements ShouldBeQueued, SelfHandling{
    * @return array
    */
   public function getApiChannels(){
-    $cacheKey = "__slack-api-channels-list__";
-
-    if(Cache::has($cacheKey)){
-      return Cache::get($cacheKey);
-    }
-
     $jsonObject = SlackApi::get('channels.list');
 
-    $channels = $jsonObject['channels'];
+    $channels = array_filter($jsonObject['channels'], function($channel){
+      return !$channel['is_archived'];
+    });
 
-    Cache::add($cacheKey, $channels, $this->cacheTime);
-
-    return  $channels;
+    return $channels;
   }
 
   /**
