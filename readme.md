@@ -1,5 +1,6 @@
 ## Slack Auto Invitations
 WebSite to automate invitations to your teams on [Slack](slack.com) made with Laravel 5.
+That application use the package [Slack API Facade](https://github.com/vluzrmos/laravel-slack-api).
 
 [![Latest Stable Version](https://poser.pugx.org/vluzrmos/slack-autoinvitation/v/stable.svg)](https://packagist.org/packages/vluzrmos/slack-autoinvitation) [![Total Downloads](https://poser.pugx.org/vluzrmos/slack-autoinvitation/downloads.svg)](https://packagist.org/packages/vluzrmos/slack-autoinvitation) [![Latest Unstable Version](https://poser.pugx.org/vluzrmos/slack-autoinvitation/v/unstable.svg)](https://packagist.org/packages/vluzrmos/slack-autoinvitation) [![License](https://poser.pugx.org/vluzrmos/slack-autoinvitation/license.svg)](https://packagist.org/packages/vluzrmos/slack-autoinvitation)
 
