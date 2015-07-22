@@ -1,4 +1,7 @@
-## Slack Auto Invitations
+## [Abandoned] Slack Auto Invitations
+
+### That project is no longer maintained, please consider to use my awesome [Lumen Slackin](https://github.com/vluzrmos/lumen-slackin) project.
+
 WebSite to automate invitations to your teams on [Slack](slack.com) made with Laravel 5.
 That application use the package [Slack API Facade](https://github.com/vluzrmos/laravel-slack-api).
 
